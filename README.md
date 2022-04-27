@@ -1,0 +1,2 @@
+# .NETCoreHomework 
+www.patika.dex
