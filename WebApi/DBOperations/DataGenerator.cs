@@ -18,8 +18,8 @@ namespace WebApi.DBoperations
                 }
                 context.Authors.AddRange(
                     new Author { FirstName = "Eric", LastName = "Ries", DateOfBirth = new DateTime(1978, 09, 22) },
-                    new Author{ FirstName = "Charlotte Perkins", LastName = "Gilman", DateOfBirth = new DateTime(1860, 07, 03) },
-                    new Author{ FirstName = "Frank", LastName = "Herbert", DateOfBirth = new DateTime(1920, 10, 08) }
+                    new Author { FirstName = "Charlotte Perkins", LastName = "Gilman", DateOfBirth = new DateTime(1860, 07, 03) },
+                    new Author { FirstName = "Frank", LastName = "Herbert", DateOfBirth = new DateTime(1920, 10, 08) }
                     );
 
 
@@ -32,9 +32,9 @@ namespace WebApi.DBoperations
                 );
 
                 context.Books.AddRange(
-                    new Book { AuthorId=1,GenreId = 1, Title = "Lean Startup", PageCount = 200, PublishDate = new DateTime(2001, 06, 12) },
-                    new Book { AuthorId=2,GenreId = 2, Title = "Herland", PageCount = 250, PublishDate = new DateTime(2010, 05, 23) },
-                    new Book { AuthorId=3,GenreId = 2, Title = "Dune", PageCount = 540, PublishDate = new DateTime(2001, 12, 21) }
+                    new Book { AuthorId = 1, GenreId = 1, Title = "Lean Startup", PageCount = 200, PublishDate = new DateTime(2001, 06, 12) },
+                    new Book { AuthorId = 2, GenreId = 2, Title = "Herland", PageCount = 250, PublishDate = new DateTime(2010, 05, 23) },
+                    new Book { AuthorId = 3, GenreId = 2, Title = "Dune", PageCount = 540, PublishDate = new DateTime(2001, 12, 21) }
                 );
 
                 context.SaveChanges();

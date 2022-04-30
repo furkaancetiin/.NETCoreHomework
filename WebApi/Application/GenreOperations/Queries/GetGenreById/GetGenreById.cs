@@ -7,9 +7,9 @@ using WebApi.DBoperations;
 namespace WebApi.Application.GenreOperations.Queries.GetGenreById{
     public class GetGenreById{
         public int GenreId { get; set; }
-        private readonly BookStoreDbContext _context ;
+        private readonly IBookStoreDbContext _context ;
         private readonly IMapper _mapper;
-        public GetGenreById(BookStoreDbContext context, IMapper mapper)
+        public GetGenreById(IBookStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
